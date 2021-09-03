@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"pig_temp\startup_stm32f439xx.o"
+"pig_temp\main.o"
+"pig_temp\stm32f4xx_it.o"
+"pig_temp\stm32f4xx_hal_msp.o"
+"pig_temp\stm32f4xx_hal_tim.o"
+"pig_temp\stm32f4xx_hal_tim_ex.o"
+"pig_temp\stm32f4xx_hal_rcc.o"
+"pig_temp\stm32f4xx_hal_rcc_ex.o"
+"pig_temp\stm32f4xx_hal_flash.o"
+"pig_temp\stm32f4xx_hal_flash_ex.o"
+"pig_temp\stm32f4xx_hal_flash_ramfunc.o"
+"pig_temp\stm32f4xx_hal_gpio.o"
+"pig_temp\stm32f4xx_hal_dma_ex.o"
+"pig_temp\stm32f4xx_hal_dma.o"
+"pig_temp\stm32f4xx_hal_pwr.o"
+"pig_temp\stm32f4xx_hal_pwr_ex.o"
+"pig_temp\stm32f4xx_hal_cortex.o"
+"pig_temp\stm32f4xx_hal.o"
+"pig_temp\stm32f4xx_hal_exti.o"
+"pig_temp\system_stm32f4xx.o"
+--strict --scatter "pig_temp\pig_temp.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "pig_temp.map" -o pig_temp\pig_temp.axf
